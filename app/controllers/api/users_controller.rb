@@ -4,10 +4,11 @@ class Api::UsersController < ApplicationController
         
         if @user.save
             login(@user)
-            
+            UserNotifierMailer.send_signup_email(@user).deliver
             render 'api/users/show'
+
         else
-            render json: ["We've made a mistake"], status: 422
+            render json: ["Invalid Credentials"], status: 422
         end 
     end
 

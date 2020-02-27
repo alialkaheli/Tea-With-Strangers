@@ -14,6 +14,7 @@
     "redux": "^4.0.1",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
+    "twilio": "^3.37.1",
     "web-console": "0.0.0",
     "webpack": "^4.27.1",
     "webpack-cli": "^3.1.2"
